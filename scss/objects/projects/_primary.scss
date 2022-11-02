@@ -1,0 +1,8 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+// primaryセクション
+
+@include m.mq(pc) {
+}
