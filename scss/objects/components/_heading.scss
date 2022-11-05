@@ -1,0 +1,25 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+
+// Base (Mobile First)
+
+	.c-heading{
+		margin-top: 65px;
+		font-size: 2.2rem;
+		font-weight: bold;
+		width: 100%;
+		position: relative;
+		transform: translateX(27px);
+		&::before{
+			content:"";
+			border: 1px solid import.$color-red;
+			width: 8px;
+			height: 43px;
+			background-color: import.$color-red;
+			position: absolute;
+			transform: translate(-27px,-10px);
+		}
+	}
+
+@include m.mq(pc) {
+}

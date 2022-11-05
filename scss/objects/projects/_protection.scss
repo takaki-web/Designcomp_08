@@ -3,6 +3,20 @@
 // Base (Mobile First)
 
 // protectionセクション
-
+		.p-contact-protection{
+			margin-top: 85px;
+			padding-bottom: 80px;
+		}
+		.p-contact-protection__text{
+			margin: 0 auto;
+			margin-top: 40px;
+			width: 100%;
+			max-width: 720px;
+			line-height: 1.8;
+			font-size: clamp(14px, 1.9vw, 16px); //両方を設定したい場合
+		}
 @include m.mq(pc) {
+	.p-contact-protection__text{
+		width: 51.429vw;
+	}
 }

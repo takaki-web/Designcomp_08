@@ -3,6 +3,25 @@
 // Base (Mobile First)
 
 // counterセクション
-
+.p-contact-counter {
+  .p-contact-counter__grid-wrapper {
+		max-width: 600px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50px 120px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+		margin: 0 auto;
+		margin-top: 40px;
+		padding-bottom: 40px;
+		font-size: clamp(12px, 1.9vw, 16px); //両方を設定したい場合
+  }
+	.p-contact-counter__grid-item{
+		border: 1px solid import.$color-black;
+		display: flex;
+		align-items: center;
+		line-height: 1.5;
+	}
+}
 @include m.mq(pc) {
 }

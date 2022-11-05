@@ -3,9 +3,16 @@
 // Base (Mobile First)
 
 // headerセクション
-.l-index-header {
-  height: 92px;
-	.burger-btn {
+.l-header {
+  border-bottom: 1px solid import.$color-red;
+  .l-header__grid-wrapper {
+    height: 53px;
+  }
+  .l-header__title {
+    margin-top: 27px;
+    text-align: center;
+  }
+  .l-header__burger-btn {
     position: absolute;
     z-index: 3;
     top: 0;
@@ -14,112 +21,112 @@
     height: 80px;
     cursor: pointer;
   }
-  .burger-btn span {
+  .l-header__burger-btn span {
     display: block;
     position: absolute;
     width: 36px;
     height: 2px;
-    left: 6px;
+    left: 1.333vw;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-    transform: translate(15px,15px);
-    background-color: import.$color-main;
-    }
-    .burger-btn span:nth-child(1) {
-      top: 11px;
-    }
-    .burger-btn span:nth-child(2) {
-      top: 23px;
-    }
-    .burger-btn span:nth-child(3) {
-      top: 35px;
-    }
-    }
-/* ナビ開いてる時のバツボタン */
-.burger-btn.active span:nth-child(1) {
-  top: 36px;
-  left: 21px;
-  background: #fff;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
+    transform: translate(15px, 15px);
+    background-color: import.$color-red;
+  }
+  .l-header__burger-btn span:nth-child(1) {
+    top: 11px;
+  }
+  .l-header__burger-btn span:nth-child(2) {
+    top: 23px;
+  }
+  .l-header__burger-btn span:nth-child(3) {
+    top: 35px;
+  }
+  /* ナビ開いてる時のバツボタン */
+  .l-header__burger-btn.active span:nth-child(1) {
+    top: 36px;
+    left: 21px;
+    background: import.$color-white;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
 
-.burger-btn.active span:nth-child(2),
-.burger-btn.active span:nth-child(3) {
-  top: 36px;
-  left: 21px;
-  background: #fff;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-/* ナビメニュー内 */
-.burger-menu {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  color: import.$color-black;
-  text-align: center;
-  width: 86.667%;
-  height: 100%;
-  font-weight: 500;
-  opacity: 0;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
-  visibility: hidden;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
-  background: import.$color-bg;
-  overscroll-behavior-y: none;
-  &::before {
-    content: "";
-    background: url(/img/sp/burger-bg.png);
-    position: absolute;
+  .l-header__burger-btn.active span:nth-child(2),
+  .l-header__burger-btn.active span:nth-child(3) {
+    top: 36px;
+    left: 21px;
+    background: import.$color-white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* ナビメニュー内 */
+  .l-header__burger-menu {
+    position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    color: import.$color-white;
+    text-align: center;
+    width: 100%;
     height: 100%;
-    width: 86.667%;
-    background-size: 100px; /* ノイズ画像の粗さを調節 */
-    opacity: 0.2;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    background: import.$color-black;
+    overscroll-behavior-y: none;
+  }
+
+  .l-header__burger-menu ul {
+    text-align: center;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(5, 21px);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+  }
+
+  .l-header__burger-menu__link {
+    transition: 0.4s all;
+  }
+
+
+  /* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
+  nav.l-header__burger-menu.active {
+    opacity: 0.9;
+    visibility: visible;
   }
 }
-
-.burger-menu ul {
-  text-align: left;
-  margin-left: 4.267vw;
-  margin-top: 98px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 54px repeat(5, 32px) 121px repeat(3, 16px);
-  grid-column-gap: 0px;
-  grid-row-gap: 16px;
-}
-
-.burger-menu__link {
-  transition: 0.4s all;
-}
-.burger-menu__link:nth-of-type(1){
-  font-size: 2.0rem;
-  color:import.$color-main;
-  &::before{
-    content:url(/img/component/logo.png);
-  }
-  display: flex;
-  gap: 1ch;
-}
-
-/* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
-nav.burger-menu.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 @include m.mq(pc) {
-  .l-index-header {
-    height: 120px;
+  .l-header {
+    .l-header__grid-wrapper {
+      height: 81px;
+      display: grid;
+      grid-template-columns: 25% 75%;
+      grid-template-rows: 56.29px;
+      grid-column-gap: 27.222%;
+      grid-row-gap: 0px;
+    }
+    .l-header__title {
+      margin-top: 24.71px;
+      width: 236.37px;
+    }
+  }
+  .l-header__grid-item {
+    margin-top: 30px;
+  }
+  .l-header__lists {
+    display: grid;
+    grid-template-columns: repeat(3, 56px) 84px;
+    grid-template-rows: 21px;
+    grid-column-gap: 2.857vw;
+    grid-row-gap: 0px;
+    font-size: 1.4rem;
+    line-height: 1.5;
   }
 }

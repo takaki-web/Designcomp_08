@@ -3,6 +3,90 @@
 // Base (Mobile First)
 
 // contactセクション
-
+.p-works-contact {
+  margin-top: 20.77px;
+  padding-bottom: 120px;
+  .p-works-contact__grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 242px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .p-works-contact__grid-item {
+    height: 242px;
+  }
+  .p-works-contact__grid-item:nth-of-type(1) {
+    background-color: import.$color-red;
+    color: import.$color-white;
+  }
+  .p-works-contact__heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-left: 8.571vw;
+  }
+  .p-works-contact__text {
+    margin-top: 10px;
+    margin-left: 8.571vw;
+    font-size: 1.4rem;
+    width: clamp(250px, 80%, 336px); //両方を設定したい場合
+    line-height: 1.5;
+  }
+  .p-works-contact__grid-item:nth-of-type(2) {
+    background-color: import.$color-lightgray3;
+    position: relative;
+    &::after {
+      content: "";
+      border-left: 1px solid import.$color-red;
+      height: 78px;
+      position: absolute;
+      top: 33.88%;
+      right: 50%;
+    }
+  }
+  .p-works-contact__sub-grid-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 78px;
+    margin-top: 87px;
+    text-align: center;
+  }
+  .p-works-contact__tell,
+  .p-works-contact__form {
+    font-weight: bold;
+    font-size: clamp(1.3rem, 1.9vw, 1.6rem); //両方を設定したい場合
+    span {
+      display: block;
+      font-size: clamp(1.6rem, 1.9vw, 3rem); //両方を設定したい場合
+    }
+  }
+  .p-works-contact__form {
+    margin: 0 auto;
+    span {
+      border: 1px solid import.$color-black;
+      width: clamp(100px, 80%, 156px); //両方を設定したい場合
+      height: 44px;
+      font-size: clamp(1.2rem, 1.9vw, 1.6rem); //両方を設定したい場合
+      background-color: import.$color-white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+}
 @include m.mq(pc) {
+  .p-works-contact {
+    .p-works-contact__grid-wrapper {
+      display: grid;
+      grid-template-columns: 45vw 1fr;
+      grid-template-rows: 242px;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+    }
+  }
 }

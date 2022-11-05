@@ -3,6 +3,31 @@
 // Base (Mobile First)
 
 // newsセクション
-
+.p-index-news {
+  .p-index-news__grid-wrapper {
+    display: grid;
+    grid-template-columns: 105px 78.5%;
+    grid-template-rows: repeat(3, 64px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+	.p-index-news__grid-item{
+    border-bottom: 1px solid import.$color-lightgray2;
+		display: flex;
+		align-items: center;
+		font-size: 1.4rem;
+	}
+	.p-index-news__grid-item:nth-last-of-type(-n+2){
+		border: none;
+	}
+}
 @include m.mq(pc) {
+	.p-index-news {
+		.p-index-news__grid-wrapper {
+			grid-template-columns: 200px 78.5%;
+		}
+		.p-index-news__grid-item{
+			font-size: 1.6rem;
+		}
+	}
 }

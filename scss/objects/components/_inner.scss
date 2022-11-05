@@ -3,18 +3,14 @@
 
 // Base (Mobile First)
 
-.c-section__inner {
-	width: 91.467vw;
-	margin: 0 auto;
-	position: relative;
+.c-inner {
+  width: 89.333vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
 }
-
 @include m.mq(pc) {
-  .c-section__inner {
-    width: 100%;
-    max-width: 1000px;
-    padding: 0;
-    margin-right:8.333vw;
+  .c-inner {
+    width: 71.429vw;
   }
-
 }
