@@ -3,18 +3,18 @@
 // Base (Mobile First)
 
 // fvセクション
-	.p-index-fv{
-		img{
-			width: 100%;
-			aspect-ratio: 5/6;
-		}
-	}
+.p-index-fv {
+  img {
+    width: 100%;
+    aspect-ratio: 5/6;
+  }
+}
 @include m.mq(pc) {
-	.p-index-fv{
-		img{
-			width: 100%;
-			aspect-ratio: 7/3;
-			max-height: 770px;
-		}
-	}
+  .p-index-fv {
+    img {
+      width: 100%;
+      aspect-ratio: 7/3;
+      max-height: 770px;
+    }
+  }
 }

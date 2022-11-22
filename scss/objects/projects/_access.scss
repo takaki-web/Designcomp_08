@@ -3,38 +3,38 @@
 // Base (Mobile First)
 
 // accessセクション
-	.p-corporate-access{
-		padding-bottom: 120px;
-		.p-corporate-access__content-wrapper{
-			margin: 0 auto;
-			margin-top: 55px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			max-width: 720px;
-		}
-		.p-corporate-access__img-wrapper{
-			width: 100%;
-			iframe{
-				width: 100%;
-				height: auto;
-				aspect-ratio: 125/82;
-			}
-		}
-		.p-corporate-access__address{
-			text-align: left;
-			width: 100%;
-			margin-top: 10px;
-		}
-	}
+.p-corporate-access {
+  padding-bottom: 120px;
+  .p-corporate-access__content-wrapper {
+    margin: 0 auto;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 720px;
+  }
+  .p-corporate-access__img-wrapper {
+    width: 100%;
+    iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 125/82;
+    }
+  }
+  .p-corporate-access__address {
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
 @include m.mq(pc) {
-	.p-corporate-access{
-		.p-corporate-access__img-wrapper{
-			iframe{
-				aspect-ratio: 8/5;
-			}
-		}
-	}
+  .p-corporate-access {
+    .p-corporate-access__img-wrapper {
+      iframe {
+        aspect-ratio: 8/5;
+      }
+    }
+  }
 }

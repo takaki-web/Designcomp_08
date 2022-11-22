@@ -3,58 +3,63 @@
 // Base (Mobile First)
 
 // aboutセクション
-	.p-contact-about{
-		.p-contact-about__table{
-			width: 100%;
-			border-collapse: collapse;
-			font-size: clamp(12px, 1.9vw, 16px); //両方を設定したい場合
-			margin-top: 54px;
-		}
-		.p-contact-about__tr{
-			height: 54px;
-		}
-		.p-contact-about__tr:nth-last-of-type(1){
-			height: 118px;
-			line-height: 2;
-		}
-		.p-contact-about__tr:nth-last-of-type(1) .p-contact-about__th{
-			vertical-align:top;
-			padding-top: 15px;
-		}
-		.p-contact-about__th{
-			border-bottom: 1px solid import.$color-black;
-			background-color: import.$color-lightgray3;
-			vertical-align:middle;
-			padding-left:1em;
-			font-weight: normal;
-		}
-		.p-contact-about__td{
-			border-bottom: 1px solid import.$color-black;
-			vertical-align:middle;
-			padding-left:1em;
-		}
-		.p-contact-about__tr:nth-of-type(1) .p-contact-about__th{
-			background-color: import.$color-gray2;
-			color: import.$color-white;
-		}
-		.p-contact-about__tr:nth-of-type(1) .p-contact-about__td{
-			background-color: import.$color-gray1;
-			color: import.$color-white;
-		}
-		.p-contact-about__privacy,.p-contact-about__text,.p-contact-about__lists{
-			margin: 0 auto;
-			margin-top: 55px;
-			width: 100%;
-			max-width: 720px;
-			line-height: 1.8;
-			font-size: clamp(14px, 1.9vw, 16px); //両方を設定したい場合
-		}
-		.p-contact-about__privacy,.p-contact-about__lists{
-			padding-bottom: 40px;
-		}
-	}
+.p-contact-about {
+  .p-contact-about__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: clamp(12px, 1.9vw, 16px); //両方を設定したい場合
+    margin-top: 54px;
+  }
+  .p-contact-about__tr {
+    height: 54px;
+  }
+  .p-contact-about__tr:nth-last-of-type(1) {
+    height: 118px;
+    line-height: 2;
+  }
+  .p-contact-about__tr:nth-last-of-type(1) .p-contact-about__th {
+    vertical-align: top;
+    padding-top: 15px;
+  }
+  .p-contact-about__th {
+    border-bottom: 1px solid import.$color-black;
+    background-color: import.$color-lightgray3;
+    vertical-align: middle;
+    padding-left: 1em;
+    font-weight: normal;
+  }
+  .p-contact-about__td {
+    border-bottom: 1px solid import.$color-black;
+    vertical-align: middle;
+    padding-left: 1em;
+  }
+  .p-contact-about__tr:nth-of-type(1) .p-contact-about__th {
+    background-color: import.$color-gray2;
+    color: import.$color-white;
+  }
+  .p-contact-about__tr:nth-of-type(1) .p-contact-about__td {
+    background-color: import.$color-gray1;
+    color: import.$color-white;
+  }
+  .p-contact-about__privacy,
+  .p-contact-about__text,
+  .p-contact-about__lists {
+    margin: 0 auto;
+    margin-top: 55px;
+    width: 100%;
+    max-width: 720px;
+    line-height: 1.8;
+    font-size: clamp(14px, 1.9vw, 16px); //両方を設定したい場合
+  }
+  .p-contact-about__privacy,
+  .p-contact-about__lists {
+    padding-bottom: 40px;
+  }
+}
 @include m.mq(pc) {
-	.p-contact-about__privacy,.p-contact-about__text,.p-contact-about__lists{
-		width: 51.429vw;
-	}
+  .p-contact-about__privacy,
+  .p-contact-about__text,
+  .p-contact-about__lists {
+    width: 51.429vw;
+  }
 }

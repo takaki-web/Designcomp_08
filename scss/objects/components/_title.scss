@@ -3,24 +3,24 @@
 
 // Base (Mobile First)
 
-	.c-title{
-		font-size: 2rem;
-		font-weight: bold;
-		align-items: center;
-		display: flex;
-		justify-content: center;
-		text-align: center;
-		white-space:nowrap;
-		span{
-			padding-right: 1em;
-		}
-		&::after{
-			background-color: import.$color-red;
-			content: "";
-			height: 1px;
-			width: 100%;
-		}
-	}
+.c-title {
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  span {
+    padding-right: 1em;
+  }
+  &::after {
+    background-color: import.$color-red;
+    content: "";
+    height: 1px;
+    width: 100%;
+  }
+}
 
 @include m.mq(pc) {
 }

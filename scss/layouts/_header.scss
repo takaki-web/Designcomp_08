@@ -86,7 +86,7 @@
     margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:repeat(5, 21px);
+    grid-template-rows: repeat(5, 21px);
     grid-column-gap: 0px;
     grid-row-gap: 20px;
   }
@@ -94,7 +94,6 @@
   .l-header__burger-menu__link {
     transition: 0.4s all;
   }
-
 
   /* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
   nav.l-header__burger-menu.active {

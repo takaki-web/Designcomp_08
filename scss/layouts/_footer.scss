@@ -12,20 +12,20 @@
     grid-row-gap: 0;
     justify-content: center;
   }
-  .l-footer__grid-item{
+  .l-footer__grid-item {
     font-size: 1.4rem;
     margin-top: 91px;
     line-height: 2;
   }
-  .l-footer__grid-item:nth-of-type(2)::before{
-    content:"";
+  .l-footer__grid-item:nth-of-type(2)::before {
+    content: "";
     height: 24px;
     border-left: 1px solid import.$color-black;
     position: absolute;
     transform: translateX(-30px);
   }
 
-  .l-footer__copyright{
+  .l-footer__copyright {
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
