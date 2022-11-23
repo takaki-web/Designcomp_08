@@ -4,7 +4,7 @@
 
 // fvセクション
 .p-index-fv {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   img {
     width: 100%;
     aspect-ratio: 5/6;
@@ -12,6 +12,7 @@
 }
 @include m.mq(pc) {
   .p-index-fv {
+    padding-bottom: 80px;
     img {
       width: 100%;
       aspect-ratio: 7/3;

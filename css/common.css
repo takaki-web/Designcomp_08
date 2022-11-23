@@ -497,7 +497,7 @@ table {
 }
 
 .p-index-fv {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 .p-index-fv img {
   width: 100%;
@@ -505,6 +505,9 @@ table {
 }
 
 @media screen and (min-width: 700px) {
+  .p-index-fv {
+    padding-bottom: 80px;
+  }
   .p-index-fv img {
     width: 100%;
     aspect-ratio: 7/3;
