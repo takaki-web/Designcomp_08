@@ -496,6 +496,9 @@ table {
   line-height: 1.5;
 }
 
+.p-index-fv {
+  padding-bottom: 80px;
+}
 .p-index-fv img {
   width: 100%;
   aspect-ratio: 5/6;
