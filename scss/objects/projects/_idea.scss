@@ -22,8 +22,16 @@
   .p-corporate-ideal__img-wrapper {
     img {
       width: 100%;
+      aspect-ratio: auto 375/208;
     }
   }
 }
 @include m.mq(pc) {
+  .p-corporate-ideal {
+    .p-corporate-ideal__img-wrapper {
+      img {
+        aspect-ratio: auto 720/400;
+      }
+    }
+  }
 }

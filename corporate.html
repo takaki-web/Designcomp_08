@@ -245,19 +245,25 @@
               テキストが入ります。
             </p>
             <!-- /.p-corporate-ideal__text -->
-            <picture class="p-corporate-ideal__img-wrapper">
+            <picture class='p-corporate-ideal__img-wrapper'>
               <source
-                media="(min-width:700px)"
-                srcset="
-                  img/pc/corporate-fv-pc.webp    1x,
-                  img/pc/corporate-fv-pc@2x.webp 2x
-                "
+              type='image/webp'
+              media='(min-width:700px)'
+              srcset='img/pc/corporate-fv-pc.webp 1x,img/pc/corporate-fv-pc@2x.webp 2x'
+              width='720' height='400'
               />
-              <img loading='lazy' src=img/sp/corporate-fv-sp.webp srcset='
-              img/sp/corporate-fv-sp.webp 1x, img/sp/corporate-fv-sp@2x.webp 2x
-              ' alt='corporate-fv' />
-            </picture>
-            <!-- /p-corporate-ideal__img-wrapper -->
+              <source
+              type='image/webp'
+              srcset='img/sp/corporate-fv-sp.webp 1x,img/sp/corporate-fv-sp@2x.webp 2x'
+              width='375' height='208'
+              />
+              <img
+              src=img/sp/corporate-fv-sp.webp
+              alt='corporate-fv'
+              width='375' height='208'
+              />
+              </picture>
+              <!-- /p-corporate-ideal__img-wrapper -->
           </div>
           <!-- /.p-corporate-ideal__content-wrapper -->
         </section>

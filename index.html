@@ -224,15 +224,25 @@
     <!-- /.l-header -->
 
     <section class="p-index-fv">
-      <picture class="p-index-img-wrapper">
-        <source
-          media="(min-width:700px)"
-          srcset="img/pc/fv-pc.webp 1x, img/pc/fv-pc@2x.webp 2x"
-        />
-        <img loading='lazy' src=img/sp/fv-sp.webp srcset=' img/sp/fv-sp.webp 1x,
-        img/sp/fv-sp@2x.webp 2x ' alt='fv' />
+      <picture class='p-index-fv__img-wrapper'>
+      <source
+      type='image/webp'
+      media='(min-width:700px)'
+      srcset='img/pc/fv-pc.webp 1x,img/pc/fv-pc@2x.webp 2x'
+      width='1400' height='600'
+      />
+      <source
+      type='image/webp'
+      srcset='img/sp/fv-sp.webp 1x,img/sp/fv-sp@2x.webp 2x'
+      width='375' height='450'
+      />
+      <img
+      src=img/sp/fv-sp.webp
+      alt='fv'
+      width='375' height='450'
+      />
       </picture>
-      <!-- /p-index-img-wrapper -->
+      <!-- /p-index-fv__img-wrapper -->
     </section>
     <!-- /.p-index-fv -->
     <section class="p-index-news">
@@ -262,29 +272,48 @@
     <!-- /.p-index-news -->
     <section class="p-index-content">
       <div class="p-index-content__grid-wrapper">
-        <picture class="p-index-content__img-wrapper">
+        <a href="#!" class="p-index-content__link">
+        <picture class='p-index-content__img-wrapper'>
           <source
-            media="(min-width:700px)"
-            srcset="
-              img/pc/top-company-pc.webp    1x,
-              img/pc/top-company-pc@2x.webp 2x
-            "
+          type='image/webp'
+          media='(min-width:700px)'
+          srcset='img/pc/top-company-pc.webp 1x,img/pc/top-company-pc@2x.webp 2x'
+          width='700' height='360'
           />
-          <img loading='lazy' src=img/sp/top-company-sp.webp srcset='
-          img/sp/top-company-sp.webp 1x, img/sp/top-company-sp@2x.webp 2x '
-          alt='top-company' />
-        </picture>
-        <!-- /p-index-content__img-wrapper -->
-        <picture class="p-index-content__img-wrapper">
           <source
-            media="(min-width:700px)"
-            srcset="img/pc/top-work-pc.webp 1x, img/pc/top-work-pc@2x.webp 2x"
+          type='image/webp'
+          srcset='img/sp/top-company-sp.webp 1x,img/sp/top-company-sp@2x.webp 2x'
+          width='375' height='193'
           />
-          <img loading='lazy' src=img/sp/top-work-sp.webp srcset='
-          img/sp/top-work-sp.webp 1x, img/sp/top-work-sp@2x.webp 2x '
-          alt='top-work' />
-        </picture>
-        <!-- /p-index-content__img-wrapper -->
+          <img
+          src=img/sp/top-company-sp.webp
+          alt='top-company'
+          width='375' height='193'
+          />
+          </picture>
+          <!-- /p-index-content__img-wrapper -->
+        </a><!-- /.p-index-content__link -->
+        <a href="#!" class="p-index-content__link">
+        <picture class='p-index-content__img-wrapper'>
+          <source
+          type='image/webp'
+          media='(min-width:700px)'
+          srcset='img/pc/top-work-pc.webp 1x,img/pc/top-work-pc@2x.webp 2x'
+          width='700' height='360'
+          />
+          <source
+          type='image/webp'
+          srcset='img/sp/top-work-sp.webp 1x,img/sp/top-work-sp@2x.webp 2x'
+          width='375' height='193'
+          />
+          <img
+          src=img/sp/top-work-sp.webp
+          alt='top-work'
+          width='375' height='193'
+          />
+          </picture>
+          <!-- /p-index-content__img-wrapper -->
+        </a><!-- /.p-index-content__link -->
       </div>
       <!-- /.p-index-content__grid-wrapper -->
     </section>
@@ -305,8 +334,6 @@
       </div>
       <!-- /.c-inner -->
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/slick.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

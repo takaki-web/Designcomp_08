@@ -7,7 +7,7 @@
   padding-bottom: 60px;
   img {
     width: 100%;
-    aspect-ratio: 5/6;
+    aspect-ratio: 375/450;
   }
 }
 @include m.mq(pc) {
@@ -15,8 +15,7 @@
     padding-bottom: 80px;
     img {
       width: 100%;
-      aspect-ratio: 7/3;
-      max-height: 770px;
+      aspect-ratio: 1400/600;
     }
   }
 }
