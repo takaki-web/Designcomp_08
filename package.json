@@ -19,5 +19,8 @@
   "homepage": "https://github.com/takaki-web/Designcomp_08#readme",
   "devDependencies": {
     "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
   }
 }
