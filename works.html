@@ -39,10 +39,8 @@
     <link rel="stylesheet" href="/css/destyle.css" />
     <!-- commoncss読み込み-->
     <link rel="stylesheet" href="/css/common.css" />
-    <!-- slickcss読み込み-->
-    <link rel="stylesheet" href="/css/slick.css" />
-    <!-- slickcss読み込み-->
-    <link rel="stylesheet" href="/css/slick-theme.css" />
+    <!-- splidecss読み込み-->
+    <link rel="stylesheet" href="/css/splide.min.css" />
     <!--サイト読み込み高速化-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -229,220 +227,298 @@
         <h2 class="p-works-main__title c-heading">実績紹介</h2>
         <!-- /.p-works-main__title -->
         <section class="p-works-primary">
-          <h3 class="p-works-primary__title c-title">公共事業<span></span></h3>
-          <!-- /.p-works-primary__title -->
-          <div class="p-works-primary__public-wrapper">
-            <div
-              class="p-works-primary__slider-wrapper"
-              id="js-p-works-primary__public-slider"
-            >
-              <picture class='p-works-primary__img-wrapper'>
-              <source
-              type='image/webp'
-              media='(min-width:700px)'
-              srcset='img/pc/work-public-01-pc.webp 1x,img/pc/work-public-01-pc@2x.webp 2x'
-              width='580' height='380'
-              />
-              <source
-              type='image/webp'
-              srcset='img/sp/work-public-01-sp.webp 1x,img/sp/work-public-01-sp@2x.webp 2x'
-              width='375' height='246'
-              />
-              <img
-              src=img/sp/work-public-01-sp.webp
-              alt='work-public-01'
-              width='375' height='246'
-              />
-              </picture>
-              <!-- /p-works-primary__img-wrapper -->
-              <picture class='p-works-primary__img-wrapper'>
-                <source
-                type='image/webp'
-                media='(min-width:700px)'
-                srcset='img/pc/work-public-02-pc.webp 1x,img/pc/work-public-02-pc@2x.webp 2x'
-                width='580' height='380'
-                />
-                <source
-                type='image/webp'
-                srcset='img/sp/work-public-02-sp.webp 1x,img/sp/work-public-02-sp@2x.webp 2x'
-                width='375' height='246'
-                />
-                <img
-                src=img/sp/work-public-02-sp.webp
-                alt='work-public-02'
-                width='375' height='246'
-                />
-                </picture>
-                <!-- /p-works-primary__img-wrapper -->
-                <picture class='p-works-primary__img-wrapper'>
-                  <source
-                  type='image/webp'
-                  media='(min-width:700px)'
-                  srcset='img/pc/work-public-03-pc.webp 1x,img/pc/work-public-03-pc@2x.webp 2x'
-                  width='580' height='380'
-                  />
-                  <source
-                  type='image/webp'
-                  srcset='img/sp/work-public-03-sp.webp 1x,img/sp/work-public-03-sp@2x.webp 2x'
-                  width='375' height='246'
-                  />
-                  <img
-                  src=img/sp/work-public-03-sp.webp
-                  alt='work-public-03'
-                  width='375' height='246'
-                  />
-                  </picture>
-                  <!-- /p-works-primary__img-wrapper -->
-                  <picture class='p-works-primary__img-wrapper'>
-                    <source
-                    type='image/webp'
-                    media='(min-width:700px)'
-                    srcset='img/pc/work-public-04-pc.webp 1x,img/pc/work-public-04-pc@2x.webp 2x'
-                    width='580' height='380'
-                    />
-                    <source
-                    type='image/webp'
-                    srcset='img/sp/work-public-04-sp.webp 1x,img/sp/work-public-04-sp@2x.webp 2x'
-                    width='375' height='246'
-                    />
-                    <img
-                    src=img/sp/work-public-04-sp.webp
-                    alt='work-public-04'
-                    width='375' height='246'
-                    />
+          <div class="p-works-primary__container">
+            <h3 class="p-works-primary__title c-title">公共事業<span></span></h3>
+            <!-- /.p-works-primary__title -->
+            <div class="splide" id="slider1">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <picture class="p-works-primary__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:700px)"
+                        srcset="
+                          img/pc/work-public-01-pc.webp    1x,
+                          img/pc/work-public-01-pc@2x.webp 2x
+                        "
+                        width="580"
+                        height="380"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/sp/work-public-01-sp.webp    1x,
+                          img/sp/work-public-01-sp@2x.webp 2x
+                        "
+                        width="375"
+                        height="246"
+                      />
+                      <img src=img/sp/work-public-01-sp.webp alt='work-public-01'
+                      width='375' height='246' />
                     </picture>
                     <!-- /p-works-primary__img-wrapper -->
-                    <picture class='p-works-primary__img-wrapper'>
+                    <div class="p-works-primary__text">2022年 公共事業プロジェクト1A</div><!-- /.p-works-primary__text -->
+                  </li>
+                  <li class="splide__slide">
+                    <picture class="p-works-primary__img-wrapper">
                       <source
-                      type='image/webp'
-                      media='(min-width:700px)'
-                      srcset='img/pc/work-public-05-pc.webp 1x,img/pc/work-public-05-pc@2x.webp 2x'
-                      width='580' height='380'
+                        type="image/webp"
+                        media="(min-width:700px)"
+                        srcset="
+                          img/pc/work-public-02-pc.webp    1x,
+                          img/pc/work-public-02-pc@2x.webp 2x
+                        "
+                        width="580"
+                        height="380"
                       />
                       <source
-                      type='image/webp'
-                      srcset='img/sp/work-public-05-sp.webp 1x,img/sp/work-public-05-sp@2x.webp 2x'
-                      width='375' height='246'
+                        type="image/webp"
+                        srcset="
+                          img/sp/work-public-02-sp.webp    1x,
+                          img/sp/work-public-02-sp@2x.webp 2x
+                        "
+                        width="375"
+                        height="246"
                       />
-                      <img
-                      src=img/sp/work-public-05-sp.webp
-                      alt='work-public-05'
-                      width='375' height='246'
-                      />
-                      </picture>
-                      <!-- /p-works-primary__img-wrapper -->
-                  </div>
-            <!-- /.p-works-primary__slider-wrapper -->
-          </div>
-          <!-- /.p-works-primary__public-wrapper -->
-          <h3 class="p-works-primary__title c-title">
-            住宅・マンション<span></span>
-          </h3>
-          <!-- /.p-works-primary__title -->
-          <div class="p-works-primary__apartment-wrapper">
-            <div
-              class="p-works-primary__slider-wrapper"
-              id="js-p-works-primary__apartment-slider"
-            >
-              <picture class='p-works-primary__img-wrapper'>
-                <source
-                type='image/webp'
-                media='(min-width:700px)'
-                srcset='img/pc/work-apartment-01-pc.webp 1x,img/pc/work-apartment-01-pc@2x.webp 2x'
-                width='580' height='380'
-                />
-                <source
-                type='image/webp'
-                srcset='img/sp/work-apartment-01-sp.webp 1x,img/sp/work-apartment-01-sp@2x.webp 2x'
-                width='375' height='246'
-                />
-                <img
-                src=img/sp/work-apartment-01-sp.webp
-                alt='work-apartment-01'
-                width='375' height='246'
-                />
-                </picture>
-                <!-- /p-works-primary__img-wrapper -->
-                <picture class='p-works-primary__img-wrapper'>
-                  <source
-                  type='image/webp'
-                  media='(min-width:700px)'
-                  srcset='img/pc/work-apartment-02-pc.webp 1x,img/pc/work-apartment-02-pc@2x.webp 2x'
-                  width='580' height='380'
-                  />
-                  <source
-                  type='image/webp'
-                  srcset='img/sp/work-apartment-02-sp.webp 1x,img/sp/work-apartment-02-sp@2x.webp 2x'
-                  width='375' height='246'
-                  />
-                  <img
-                  src=img/sp/work-apartment-02-sp.webp
-                  alt='work-apartment-02'
-                  width='375' height='246'
-                  />
-                  </picture>
-                  <!-- /p-works-primary__img-wrapper -->
-                  <picture class='p-works-primary__img-wrapper'>
-                    <source
-                    type='image/webp'
-                    media='(min-width:700px)'
-                    srcset='img/pc/work-apartment-03-pc.webp 1x,img/pc/work-apartment-03-pc@2x.webp 2x'
-                    width='580' height='380'
-                    />
-                    <source
-                    type='image/webp'
-                    srcset='img/sp/work-apartment-03-sp.webp 1x,img/sp/work-apartment-03-sp@2x.webp 2x'
-                    width='375' height='246'
-                    />
-                    <img
-                    src=img/sp/work-apartment-03-sp.webp
-                    alt='work-apartment-03'
-                    width='375' height='246'
-                    />
+                      <img src=img/sp/work-public-02-sp.webp alt='work-public-02'
+                      width='375' height='246' />
                     </picture>
                     <!-- /p-works-primary__img-wrapper -->
-                    <picture class='p-works-primary__img-wrapper'>
+                    <div class="p-works-primary__text">2021年 公共事業プロジェクト2A</div><!-- /.p-works-primary__text -->
+                  </li>
+                  <li class="splide__slide">
+                    <picture class="p-works-primary__img-wrapper">
                       <source
-                      type='image/webp'
-                      media='(min-width:700px)'
-                      srcset='img/pc/work-apartment-04-pc.webp 1x,img/pc/work-apartment-04-pc@2x.webp 2x'
-                      width='580' height='380'
+                        type="image/webp"
+                        media="(min-width:700px)"
+                        srcset="
+                          img/pc/work-public-03-pc.webp    1x,
+                          img/pc/work-public-03-pc@2x.webp 2x
+                        "
+                        width="580"
+                        height="380"
                       />
                       <source
-                      type='image/webp'
-                      srcset='img/sp/work-apartment-04-sp.webp 1x,img/sp/work-apartment-04-sp@2x.webp 2x'
-                      width='375' height='246'
+                        type="image/webp"
+                        srcset="
+                          img/sp/work-public-03-sp.webp    1x,
+                          img/sp/work-public-03-sp@2x.webp 2x
+                        "
+                        width="375"
+                        height="246"
                       />
-                      <img
-                      src=img/sp/work-apartment-04-sp.webp
-                      alt='work-apartment-04'
-                      width='375' height='246'
+                      <img src=img/sp/work-public-03-sp.webp alt='work-public-03'
+                      width='375' height='246' />
+                    </picture>
+                    <!-- /p-works-primary__img-wrapper -->
+                    <div class="p-works-primary__text">2020年 公共事業プロジェクト3A</div><!-- /.p-works-primary__text -->
+                  </li>
+                  <li class="splide__slide">
+                    <picture class="p-works-primary__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:700px)"
+                        srcset="
+                          img/pc/work-public-04-pc.webp    1x,
+                          img/pc/work-public-04-pc@2x.webp 2x
+                        "
+                        width="580"
+                        height="380"
                       />
-                      </picture>
-                      <!-- /p-works-primary__img-wrapper -->
-                      <picture class='p-works-primary__img-wrapper'>
-                        <source
-                        type='image/webp'
-                        media='(min-width:700px)'
-                        srcset='img/pc/work-apartment-05-pc.webp 1x,img/pc/work-apartment-05-pc@2x.webp 2x'
-                        width='580' height='380'
-                        />
-                        <source
-                        type='image/webp'
-                        srcset='img/sp/work-apartment-05-sp.webp 1x,img/sp/work-apartment-05-sp@2x.webp 2x'
-                        width='375' height='246'
-                        />
-                        <img
-                        src=img/sp/work-apartment-05-sp.webp
-                        alt='work-apartment-05'
-                        width='375' height='246'
-                        />
-                        </picture>
-                        <!-- /p-works-primary__img-wrapper -->
-                    </div>
-            <!-- /.p-works-primary__slider-wrapper -->
-          </div>
-          <!-- /.p-works-primary__apartment-wrapper -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/sp/work-public-04-sp.webp    1x,
+                          img/sp/work-public-04-sp@2x.webp 2x
+                        "
+                        width="375"
+                        height="246"
+                      />
+                      <img src=img/sp/work-public-04-sp.webp alt='work-public-04'
+                      width='375' height='246' />
+                    </picture>
+                    <!-- /p-works-primary__img-wrapper -->
+                    <div class="p-works-primary__text">2019年 公共事業プロジェクト4A</div><!-- /.p-works-primary__text -->
+                  </li>
+                  <li class="splide__slide">
+                    <picture class="p-works-primary__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:700px)"
+                        srcset="
+                          img/pc/work-public-05-pc.webp    1x,
+                          img/pc/work-public-05-pc@2x.webp 2x
+                        "
+                        width="580"
+                        height="380"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/sp/work-public-05-sp.webp    1x,
+                          img/sp/work-public-05-sp@2x.webp 2x
+                        "
+                        width="375"
+                        height="246"
+                      />
+                      <img src=img/sp/work-public-05-sp.webp alt='work-public-05'
+                      width='375' height='246' />
+                    </picture>
+                    <!-- /p-works-primary__img-wrapper -->
+                    <div class="p-works-primary__text">2018年 公共事業プロジェクト5A</div><!-- /.p-works-primary__text -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /.p-works-primary__container -->
+          <div class="p-works-primary__container">
+            <h3 class="p-works-primary__title c-title">
+              住宅・マンション<span></span>
+            </h3>
+            <!-- /.p-works-primary__title -->
+            <div class="splide" id="slider2">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <picture class="p-works-primary__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:700px)"
+                        srcset="
+                          img/pc/work-apartment-01-pc.webp    1x,
+                          img/pc/work-apartment-01-pc@2x.webp 2x
+                        "
+                        width="580"
+                        height="380"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/sp/work-apartment-01-sp.webp    1x,
+                          img/sp/work-apartment-01-sp@2x.webp 2x
+                        "
+                        width="375"
+                        height="246"
+                      />
+                      <img src=img/sp/work-apartment-01-sp.webp
+                      alt='work-apartment-01' width='375' height='246' />
+                    </picture>
+                    <!-- /p-works-primary__img-wrapper -->
+                    <div class="p-works-primary__text">2022年 マンション・住宅プロジェクト1A</div><!-- /.p-works-primary__text -->
+                      </li>
+                  <li class="splide__slide">
+                    <picture class="p-works-primary__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:700px)"
+                        srcset="
+                          img/pc/work-apartment-02-pc.webp    1x,
+                          img/pc/work-apartment-02-pc@2x.webp 2x
+                        "
+                        width="580"
+                        height="380"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/sp/work-apartment-02-sp.webp    1x,
+                          img/sp/work-apartment-02-sp@2x.webp 2x
+                        "
+                        width="375"
+                        height="246"
+                      />
+                      <img src=img/sp/work-apartment-02-sp.webp
+                      alt='work-apartment-02' width='375' height='246' />
+                    </picture>
+                    <!-- /p-works-primary__img-wrapper -->
+                    <div class="p-works-primary__text">2021年 マンション・住宅プロジェクト2A</div><!-- /.p-works-primary__text -->
+                      </li>
+                  <li class="splide__slide">
+                    <picture class="p-works-primary__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:700px)"
+                        srcset="
+                          img/pc/work-apartment-03-pc.webp    1x,
+                          img/pc/work-apartment-03-pc@2x.webp 2x
+                        "
+                        width="580"
+                        height="380"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/sp/work-apartment-03-sp.webp    1x,
+                          img/sp/work-apartment-03-sp@2x.webp 2x
+                        "
+                        width="375"
+                        height="246"
+                      />
+                      <img src=img/sp/work-apartment-03-sp.webp
+                      alt='work-apartment-03' width='375' height='246' />
+                    </picture>
+                    <!-- /p-works-primary__img-wrapper -->
+                    <div class="p-works-primary__text">2020年 マンション・住宅プロジェクト3A</div><!-- /.p-works-primary__text -->
+                      </li>
+                  <li class="splide__slide">
+                    <picture class="p-works-primary__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:700px)"
+                        srcset="
+                          img/pc/work-apartment-04-pc.webp    1x,
+                          img/pc/work-apartment-04-pc@2x.webp 2x
+                        "
+                        width="580"
+                        height="380"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/sp/work-apartment-04-sp.webp    1x,
+                          img/sp/work-apartment-04-sp@2x.webp 2x
+                        "
+                        width="375"
+                        height="246"
+                      />
+                      <img src=img/sp/work-apartment-04-sp.webp
+                      alt='work-apartment-04' width='375' height='246' />
+                    </picture>
+                    <!-- /p-works-primary__img-wrapper -->
+                    <div class="p-works-primary__text">2019年 マンション・住宅プロジェクト4A</div><!-- /.p-works-primary__text -->
+                      </li>
+                  <li class="splide__slide">
+                    <picture class="p-works-primary__img-wrapper">
+                      <source
+                        type="image/webp"
+                        media="(min-width:700px)"
+                        srcset="
+                          img/pc/work-apartment-05-pc.webp    1x,
+                          img/pc/work-apartment-05-pc@2x.webp 2x
+                        "
+                        width="580"
+                        height="380"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/sp/work-apartment-05-sp.webp    1x,
+                          img/sp/work-apartment-05-sp@2x.webp 2x
+                        "
+                        width="375"
+                        height="246"
+                      />
+                      <img src=img/sp/work-apartment-05-sp.webp
+                      alt='work-apartment-05' width='375' height='246' />
+                    </picture>
+                    <!-- /p-works-primary__img-wrapper -->
+                    <div class="p-works-primary__text">2018年 マンション・住宅プロジェクト5A</div><!-- /.p-works-primary__text -->
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /.p-works-primary__container -->
         </section>
         <!-- /.p-works-primary -->
         <section class="p-works-contact">
@@ -498,16 +574,8 @@
       </div>
       <!-- /.c-inner -->
     </footer>
+    <script src="/js/splide.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
-    <script src="/js/slick.min.js"></script>
-    <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v15.0"
-      nonce="igFudxFx"
-    ></script>
   </body>
 </html>

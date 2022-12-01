@@ -34,62 +34,64 @@
 }
 
 .p-works-primary {
-  margin-top: 85px;
-  .p-works-primary__public-wrapper {
-    margin-top: 40px;
-    padding-bottom: 75.23px;
+  .p-works-primary__container:nth-of-type(1){
+    margin-top: 85px;
   }
-  .p-works-primary__apartment-wrapper {
-    margin-top: 40px;
-    padding-bottom: 75.23px;
+  .p-works-primary__container:nth-of-type(2){
+    margin-top: 46px;
+  }
+  .splide {
+    margin-top: 35px;
+    padding-bottom: 40px;
+  }
+  .splide__arrow{
+    display: none;
+   }
+   .p-works-primary__img-wrapper{
+    position: relative;
   }
 
-  .p-works-primary__img-wrapper {
-    margin: 0 10px;
-  }
-  .p-works-primary__img-wrapper img {
-    width: 100%;
-    aspect-ratio: 29/19;
-  }
-  .p-works-primary__slider-dots {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  .p-works-primary__slider-dots li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  .p-works-primary__slider-dots li button {
-    position: relative;
-    text-indent: -9999px;
-  }
-  // すべてのドットのスタイル
-  .p-works-primary__slider-dots li button::before {
-    background-color: import.$color-lightgray2;
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
-    cursor: pointer;
-    height: 4px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 24px;
-    width: 30px;
-  }
-  // 選択されているドット
-  .p-works-primary__slider-dots li.slick-active button::before {
+.p-works-primary__img-wrapper img {
+  max-width: 100%;
+  aspect-ratio: 375/246;
+  height: auto;
+}
+.splide__pagination__page{
+  background-color: import.$color-lightgray2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 4px;
+  width: 30px;
+  border-radius:0;
+}
+.splide__pagination__page[class*="is-active"]{
     background-color: import.$color-gray1;
   }
-  button {
-    background: none;
-    border: none;
-    outline: none;
-    padding: 0 10px;
+  .p-works-primary__text{
+    width: 100%;
+    max-width: 375px;
+    height: 51px;
+    background-color: import.$color-mask;
+    opacity: 0.7;
+    color: import.$color-white;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 
 @include m.mq(pc) {
+  .p-works-primary {
+  .p-works-primary__img-wrapper img {
+    aspect-ratio: 580/380;
+  }
+  .p-works-primary__text{
+    max-width: 580px;
+    padding-left: 1em;
+  }
+  }
+
 }
