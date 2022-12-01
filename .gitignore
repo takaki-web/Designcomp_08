@@ -9,5 +9,5 @@ img/
 fonts/
 *.exe
 ignore.css
-
+node_modules/
 
