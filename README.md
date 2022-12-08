@@ -1,5 +1,5 @@
-# Read Me
-各サイト共通設計　意識した事
+# 各サイト共通設計　意識した事
+
 ## 【CSS設計：PDFLOCSS】
 
 https://zenn.dev/wagashi_osushi/books/94efd21a66ccaa
